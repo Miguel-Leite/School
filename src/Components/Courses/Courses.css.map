@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,EAAE;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAIf;;AARD,AAMI,QANI,CAMJ,CAAC,CAAC;EAAE,MAAM,EAAE,QAAQ;CAAG",
+    "sources": [
+        "Courses.scss"
+    ],
+    "names": [],
+    "file": "Courses.css"
+}

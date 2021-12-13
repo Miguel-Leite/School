@@ -1,0 +1,59 @@
+// BACKGROUND BANNER 
+$banner: rgba(0, 94, 182, 0.781);
+
+// COLOR TEXT
+$color-text-menu-1: #fff;
+$color-text-menu-2: #333;
+
+$primary: rgb(0, 35, 99);
+$primary-hover: rgb(12, 55, 134);
+$secundary: rgb(127, 0, 245);
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, $banner,transparent), url('./hero.png');
+    p {
+        color: white;
+    }
+    .video-background,
+    .image-background{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+    }
+
+    @media (min-aspect-ratio: 16/9){
+        .video-background{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-aspect-ratio: 16/9){
+        .video-background{
+            width: auto;
+            height: 100%;
+        }
+    }
+    
+    .container {
+        color: $color-text-menu-1; padding-top: 3%;
+        margin-top: 4%;
+    }
+    h1 {
+        font-size: 64px;
+        font-weight: bold;
+    }
+    @media (max-width: 600px){
+        h1 {
+            font-size: 50px;
+        }
+    }
+}

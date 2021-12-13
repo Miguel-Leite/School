@@ -1,0 +1,243 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  height: 4rem;
+  padding: 40px 0;
+  background-color: transparent;
+  z-index: 999;
+}
+
+.toggle__menu,
+.close__menu {
+  display: none;
+}
+
+.logo a {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+.nav__item {
+  margin: 0 1.5rem;
+  padding: 1.4rem 0;
+}
+
+.nav__link {
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav__link:hover {
+  color: #7f00f5;
+  text-decoration: none;
+}
+
+._dropdown__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._dropdown__icon {
+  font-size: 1rem;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  left: 0;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 0 23px 23px -21px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 23px 23px -21px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.megamenu .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.megamenu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header__megamenu {
+  font-weight: 600;
+  color: #a8a1b5;
+  margin-bottom: 1rem;
+}
+
+.menu__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #efeef1;
+  margin-right: 0.5rem;
+}
+
+.menu__icon i {
+  line-height: 32px;
+  font-size: 22px;
+  color: #002363;
+}
+
+.megamenu__link a {
+  font-weight: 500;
+  color: #000;
+}
+
+.megamenu__link a:hover {
+  color: #7f00f5;
+}
+
+.megamenu__link p {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: #a8a1b5;
+}
+
+._dropdown:hover .megamenu {
+  color: #7f00f5;
+  visibility: visible;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 1;
+}
+
+.nav__item:hover ._dropdown__icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .megamenu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__link {
+    font-weight: 500;
+    color: #333;
+  }
+  .megamenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    height: 0;
+    max-width: 350px;
+    overflow: hidden;
+  }
+  ._dropdown:hover .megamenu {
+    height: 100%;
+  }
+  .nav__list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    max-width: 320px;
+    top: 0;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-x: hidden;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .toggle__menu,
+  .close__menu {
+    display: block;
+  }
+  .toggle__menu i {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .toggle__menu i:hover {
+    cursor: pointer;
+    color: #7f00f5;
+  }
+  .close__menu {
+    margin: 1rem 1rem 1rem auto;
+    background-color: #7f00f5;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .close__menu:hover {
+    background-color: #632e70;
+  }
+  .close__menu i {
+    line-height: 32px;
+    color: #fff;
+    font-size: 22px;
+  }
+  .show__menu {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

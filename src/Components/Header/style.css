@@ -1,0 +1,54 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 94, 182, 0.781)), to(transparent)), url("./hero.png");
+  background: linear-gradient(to right, rgba(0, 94, 182, 0.781), transparent), url("./hero.png");
+}
+
+header p {
+  color: white;
+}
+
+header .video-background,
+header .image-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  header .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  header .video-background {
+    width: auto;
+    height: 100%;
+  }
+}
+
+header .container {
+  color: #fff;
+  padding-top: 3%;
+  margin-top: 4%;
+}
+
+header h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+section.video {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(17, 0, 170, 0.658)), to(rgba(190, 0, 248, 0.616))), url("./bg.jpg");
+  background: linear-gradient(to right, rgba(17, 0, 170, 0.658) 50%, rgba(190, 0, 248, 0.616)), url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  -webkit-box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.274);
+          box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.274);
+  position: relative;
+  margin-top: 10%;
+}
+
+section.video h6 {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+/*# sourceMappingURL=Video.css.map */
